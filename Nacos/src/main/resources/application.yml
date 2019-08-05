@@ -1,0 +1,31 @@
+dubbo:
+  application:
+    name: dubbo-provider-demo
+    qosEnable: true
+    qosPort: 22222
+    qosAcceptForeignIp: false
+  protocol:
+    port: 20880
+    name: dubbo
+#    serialization: kryo
+  registry:
+    address: nacos://192.168.0.14:8848
+    simplified: false
+    register: false
+  metadata-report:
+    address: nacos://192.168.0.14:8848
+  config-center:
+    address: nacos://192.168.0.14:8848
+spring:
+  profiles:
+    include: nacos
+    active: public
+
+server:
+  port: 8081
+
+
+
+
+  
+  
