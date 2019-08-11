@@ -21,7 +21,7 @@ public class DemoController {
 
     @GetMapping("/hello")
     public String hello(String name) {
-        System.out.println("helloProvider = " + helloProvider);
+        System.out.println("测试修改：helloProvider = " + helloProvider);
         if (helloProvider == null) {
             return "hello failed";
         }
