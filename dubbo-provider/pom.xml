@@ -89,7 +89,4 @@
         </dependency>
 
     </dependencies>
-    <build>
-        <finalName>Nacos</finalName>
-    </build>
 </project>

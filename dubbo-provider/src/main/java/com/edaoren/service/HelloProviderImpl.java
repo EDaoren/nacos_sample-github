@@ -1,15 +1,14 @@
 package com.edaoren.service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.edaoren.api.HelloProvider;
 import com.edaoren.api.version.ServiceVersionConstants;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Value;
 
-import com.edaoren.api.HelloProvider;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @org.springframework.stereotype.Service("helloProvider")
 @Service(timeout = 5000, version = ServiceVersionConstants.VERSION, interfaceName = "helloProvider")
