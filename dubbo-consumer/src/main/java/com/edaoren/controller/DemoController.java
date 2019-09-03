@@ -12,7 +12,7 @@ import com.edaoren.api.HelloProvider2;
 public class DemoController {
 
 
-    @Reference(version = ServiceVersionConstants.VERSION, check = false, interfaceName = "helloProvider", url = "dubbo://localhost:20880")
+    @Reference(version = ServiceVersionConstants.VERSION, check = false, url = "dubbo://localhost:20880")
     private HelloProvider helloProvider;
 
 
@@ -27,7 +27,6 @@ public class DemoController {
         }
         return helloProvider.hello(name);
     }
-
 
     @GetMapping("/hello2")
     public String hello2(String name) {

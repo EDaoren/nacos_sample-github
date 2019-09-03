@@ -9,12 +9,8 @@ dubbo:
     name: dubbo
   #   serialization: kryo
   registry:
-    address: nacos://192.168.0.14:8848
+    address: nacos://192.168.50.10:8848
     simplified: false
-  metadata-report:
-    address: nacos://192.168.0.14:8848
-  config-center:
-    address: nacos://192.168.0.14:8848
 
 
 spring:

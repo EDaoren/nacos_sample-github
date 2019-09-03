@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @org.springframework.stereotype.Service("helloProvider")
-@Service(timeout = 5000, version = ServiceVersionConstants.VERSION, interfaceName = "helloProvider")
+@Service(timeout = 5000, version = ServiceVersionConstants.VERSION)
 public class HelloProviderImpl implements HelloProvider {
 
     @Value("${spring.profiles.active}")
